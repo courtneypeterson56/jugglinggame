@@ -1,3 +1,5 @@
+//given to me by professor
+
 import edu.princeton.cs.algs4.*;
 
 public class JugglingGame {     
