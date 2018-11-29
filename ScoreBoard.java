@@ -17,7 +17,7 @@ public class ScoreBoard  {
             lost++;
     }
     public boolean gameOver() {
-        // Return true when the number of lost balls
+        // Returns true when the number of lost balls
         // is at least 5, and false otherwise.
         if (lost >= 5) {
             return true;
@@ -27,9 +27,9 @@ public class ScoreBoard  {
         }
     }
     public boolean increment() {
-        // Increment the number of hits. If the number of hits
-        // is at least 3*level, then increase the level and
-        // return true; otherwise return false.
+        // Increments the number of hits. If the number of hits
+        // is at least 3*level, then increases the level and
+        // return true; otherwise returns false.
           hits ++;
            if (hits >= 3*level) {
                level++;
@@ -40,7 +40,7 @@ public class ScoreBoard  {
            }       
     }
     public void draw(boolean gameover) {
-        // Display the current status of the game on the StdDraw window.
+        // Displays the current status of the game on the StdDraw window.
         if (gameover){
             StdDraw.setPenColor(StdDraw.RED);
             StdDraw.text(.5, .6, "GAME OVER");
